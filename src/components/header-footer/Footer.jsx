@@ -32,22 +32,22 @@ const Footer = () => {
             {/* Help Center Section */}
             <div className='flex flex-col  '>
               <h2 className="mb-6 text-sm font-semibold text-gray-50 uppercase dark:text-white">
-                Help Center
+                Links
               </h2>
               <ul className="text-gray-500  dark:text-gray-400 font-medium">
                 <li className="mb-4">
                   <a href="#" className="hover:underline">
-                    Discord Server
+                    Home
                   </a>
                 </li>
                 <li className="mb-4">
                   <a href="#" className="hover:underline">
-                    Twitter
+                    About us
                   </a>
                 </li>
                 <li className="mb-4">
                   <a href="#" className="hover:underline">
-                    Facebook
+                    All Videos
                   </a>
                 </li>
                 <li className="mb-4">
