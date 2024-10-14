@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import Header from './components/header-footer/Header'
 import Routing from './utils/Routing'
-import Footer from './components/header-footer/footer'
+import Footer from './components/header-footer/Footer'
 
 
 const App = () => {
