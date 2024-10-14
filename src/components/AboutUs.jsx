@@ -38,7 +38,6 @@ const AboutUs = () => {
           </div>
         </div>
       </section>
-
       <div className="bg-black">
         <section
           id="features"
