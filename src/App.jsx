@@ -3,6 +3,7 @@ import Header from './components/header-footer/Header'
 import Routing from './utils/Routing'
 import Footer from './components/header-footer/footer'
 
+
 const App = () => {
   // useEffect(() => {
   //   document.addEventListener('contextmenu', (event) => {
@@ -13,7 +14,7 @@ const App = () => {
     <>
     <Header />
     <Routing />
-    <Footer/>
+   <Footer/>
     </>
   )
 }
