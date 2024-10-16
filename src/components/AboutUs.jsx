@@ -6,11 +6,21 @@ const AboutUs = () => {
       <section className=" overflow-hidden h-full py-10 bg-gray-50 dark:bg-white">
         <div className="px-4 flex justify-center items-center h-full mx-auto sm:px-6 lg:px-8 max-w-7xl">
           <div className="grid items-center gap-2 grid-cols-1 md:grid-cols-2">
+          <div className=" w-full h-full flex justify-center items-center ">
+              <img
+                className=" h-52 "
+                src="/images/god gallery/vedanttttt.jpg"
+                alt=""
+              />
+              {/* <img className="absolute inset-x-0 bottom-10 -mb-10 -translate-x-1/2 left-1/2" src="https://cdn.rareblocks.xyz/collection/celebration/images/team/1/blob-shape.svg" alt="" /> */}
+
+              {/* <img className="relative w-full xl:max-w-lg  xl:mx-auto 2xl:origin-bottom " src="https://cdn.rareblocks.xyz/collection/celebration/images/team/1/business-woman.png" alt="" /> */}
+            </div>
             <div className=" w-full h-full ">
               <h2 className="text-3xl font-bold leading-tight text-black dark:text-black sm:text-4xl lg:text-5xl">
                 Vedant Devotions
               </h2>
-              <p className="max-w-xl mt-3 text-lg leading-relaxed text-gray-800 dark:text-zinc-800 ">
+              <p className="max-w-xl mt-3 text-lg leading-relaxed text-gray-800 dark:text-zinc-800 text-justify">
                 Welcome to Vedant Devotions! We are a digital space dedicated to
                 spreading the essence of devotion and spirituality through
                 captivating images and inspiring content. Our mission is to
@@ -25,16 +35,6 @@ const AboutUs = () => {
               </p>
             </div>
 
-            <div className=" w-full h-full flex justify-center items-center ">
-              <img
-                className=" h-52 "
-                src="/images/god gallery/vedanttttt.jpg"
-                alt=""
-              />
-              {/* <img className="absolute inset-x-0 bottom-10 -mb-10 -translate-x-1/2 left-1/2" src="https://cdn.rareblocks.xyz/collection/celebration/images/team/1/blob-shape.svg" alt="" /> */}
-
-              {/* <img className="relative w-full xl:max-w-lg  xl:mx-auto 2xl:origin-bottom " src="https://cdn.rareblocks.xyz/collection/celebration/images/team/1/business-woman.png" alt="" /> */}
-            </div>
           </div>
         </div>
       </section>
@@ -83,9 +83,9 @@ const AboutUs = () => {
                 </svg>
               </div>
               <h3 className="mt-6 font-semibold text-gray-200">
-                Embracing Spirituality Through Imagery
+                Our Mission
               </h3>
-              <p className="my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-400">
+              <p className="my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-400 text-justify">
                 At Vedant Devotions, we aim to capture the essence of devotion
                 through visually stunning images that reflect spiritual beauty
                 and inner peace. Our content is carefully curated to inspire
@@ -122,9 +122,9 @@ const AboutUs = () => {
                 </svg>
               </div>
               <h3 className="mt-6 font-semibold text-gray-200">
-                A Journey of Faith and Inspiration
+                Our Vision
               </h3>
-              <p className="my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-400">
+              <p className="my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-400 text-justify">
                 Our platform is more than just a collection of images; it’s a
                 journey. Each post on our YouTube channel is designed to inspire
                 faith, offering a peaceful pause in your busy life. Whether
@@ -166,9 +166,9 @@ const AboutUs = () => {
                 </svg>
               </div>
               <h3 className="mt-6 font-semibold text-gray-200">
-                A Growing Community of Devotees
+                Our Goal
               </h3>
-              <p className="my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-400">
+              <p className="my-4 mb-0 font-normal tracking-wide text-gray-400 text-justify leading-relaxed">
                 At the heart of Vedant Devotions is our community. We are
                 passionate about connecting with individuals who share a love
                 for spirituality and devotion. As we continue to grow, we invite
