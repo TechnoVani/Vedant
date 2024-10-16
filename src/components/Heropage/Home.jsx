@@ -1,11 +1,31 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { SwiperDiv } from "./HomeComponents/SwiperDiv";
+import { useLocation } from "react-router-dom";
+import { toast, ToastContainer } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
+import SwiperSecond from "./HomeComponents/SwiperSecond";
 
 const Home = () => {
+  const location = useLocation();
+
+  // Show success toast if redirected from signup
+  useEffect(() => {
+    if (location.state?.signupSuccess) {
+      toast.success("Signup Successful! Welcome to Vedant Devotions!");
+    }
+  }, [location.state]);
+
   return (
-    <>
-      <section className="relative h-[80vh] w-full bg-gray-700 bg-blend-multiply">
-        <video
+    <div className="justify-center items-center flex">
+    <div className="container">
+    {/* <ToastContainer /> Toast container */}
+    {/* <div className="py-2  bg-red-300"> */}
+
+    {/* </div> */}
+      <section className="relative   w-full py-2 bg-blend-multiply">
+     <SwiperDiv contentType="videos" />
+
+        {/* <video
           autoPlay
           muted
           loop
@@ -23,8 +43,12 @@ const Home = () => {
             Here at Flowbite we focus on markets where technology, innovation,
             and capital can unlock long-term value and drive economic growth.
           </p>
-        </div>
+        </div> */}
       </section>
+      <section>
+        
+      </section>
+      <SwiperSecond/>
       <section className="py-14 lg:py-10 relative shadow-zinc-600 z-0 bg-zinc-300">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative text-center">
           <h3 className="max-w-2xl mx-auto text-center font-manrope font-bold text-4xl text-gray-900 mb-5 md:text-3xl md:leading-normal">
@@ -83,7 +107,8 @@ const Home = () => {
   </div>
       <SwiperDiv  contentType="shorts"/>
       </section>
-    </>
+    </div>
+    </div>
   );
 };
 

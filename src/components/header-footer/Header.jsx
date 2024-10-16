@@ -62,6 +62,16 @@ const Header = () => {
           Contact Us
         </Link>
       </Typography>
+      <Typography
+        as="li"
+        variant="medium"
+        color="blue-gray"
+        className="flex items-center gap-x-2 p-1 font-semibold hover:text-pink-700"
+      >
+        <Link to="/signin" className="flex items-center"  onClick={() => setOpenNav(false)}>
+          Log In
+        </Link>
+      </Typography>
     </ul>
   );
 

@@ -3,7 +3,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 import  React, { useState } from "react";
-import { Navigation, Pagination } from "swiper/modules";
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { IconButton } from "@material-tailwind/react";
 import { NavArrowRight, NavArrowLeft } from "iconoir-react";
 import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
@@ -53,7 +53,7 @@ const cardData = [
           variant="ghost"
           color="secondary"
           onClick={() => swiper.slidePrev()}
-          className="dark !absolute rounded-full hover:bg-gray-700 left-2 top-[29%] z-10 -translate-y-1/2"
+          className="dark !absolute rounded-full hover:bg-gray-700 left-2 top-[50%] z-10 -translate-y-1/2"
         >
           <NavArrowLeft className="h-7 w-7 -translate-x-0.5 stroke-2" />
         </IconButton>
@@ -64,7 +64,7 @@ const cardData = [
           variant="ghost"
           color="secondary"
           onClick={() => swiper.slideNext()}
-          className="dark !absolute right-2 rounded-full hover:bg-gray-700 top-[29%]  z-10 -translate-y-1/2"
+          className="dark !absolute right-2 rounded-full hover:bg-gray-700 top-[50%]  z-10 -translate-y-1/2"
         >
           <NavArrowRight className="h-7 w-7 translate-x-px stroke-2" />
         </IconButton>
@@ -170,12 +170,16 @@ const cardData = [
       setSelectedVideoId(null); // Reset the video ID when closing
     };
   return (
-    <div className="max-w-full h-[80vh]">
+    <div className="max-w-full h-fit">
     <Swiper
       loop={true} 
       slidesPerView={4}  
       slidesPerGroup={1}  
       spaceBetween={20}  
+      autoplay={{
+        delay: 3000, // Set the delay in milliseconds (3 seconds here)
+        disableOnInteraction: false, // Auto-swiping will not stop after user interaction
+      }}
       pagination={{
         enabled: true,
         clickable: true,
@@ -185,8 +189,9 @@ const cardData = [
       breakpoints={{
         // When the screen width is >= 1024px
         1024: {
-          slidesPerView: 4, // Show 4 slides per view
+          slidesPerView: 5, // Show 4 slides per view
           slidesPerGroup: 1,
+          spaceBetween:1  
         },
         // When the screen width is >= 768px
         768: {
@@ -199,27 +204,32 @@ const cardData = [
         },
         // When the screen width is < 768px
         0: {
-          slidesPerView: 1, // Show 1 slide per view
+          slidesPerView: 3, // Show 1 slide per view
           slidesPerGroup: 1,
+          spaceBetween:2
         },
       }}
-      modules={[Navigation, Pagination]}
-      className="relative h-[50vh] rounded-lg [&_div.swiper-button-next]:text-background [&_div.swiper-button-prev]:text-background"
+      modules={[Navigation, Pagination, Autoplay]}
+      className="relative h-fit  rounded-lg [&_div.swiper-button-next]:text-background [&_div.swiper-button-prev]:text-background"
     >
       {/* Loop through the cardData array */}
       {data.map((card, index) => (
-          <SwiperSlide key={card.id} className="select-none">
-            <div
-              className="p-1 bg-white shadow-lg rounded-lg cursor-pointer"
-              onClick={() => openModal(card.videoId)} // Assuming each card has a videoId
-            >
-              <img
-                src={card.img}
-                alt={`image-${index}`}
-                className="h-[200px] w-full object-cover rounded-lg"
-              />
-            </div>
-          </SwiperSlide>
+         <SwiperSlide key={card.id} className="select-none p-1 w-full">
+         <div className="relative h-[170px] w-full overflow-hidden  cursor-pointer bg-blue-gray-500  rounded-md group">
+           {/* Image */}
+           <img
+             src={card.img}
+             alt={`image-${index}`}
+             className="h-full w-full overflow-x-hidden object-cover"
+           />
+           <div
+             className="absolute bottom-[-20%]  h-[20%]  w-full overflow-hidden  bg-black text-white transition-all duration-500 ease-in-out opacity-0 group-hover:bottom-0 group-hover:opacity-100"
+             style={{ width: '100%' }}
+           >
+             <p className="text-white z-50">hel</p> {/* Assuming `card.text` contains the card's text */}
+           </div>
+         </div>
+       </SwiperSlide>
         ))}
  <VideoModal open={modalOpen} handleOpen={closeModal} videoId={selectedVideoId} />
       <CustomNavigation />
