@@ -5,8 +5,11 @@
 }
 html,body{
     width: 100%;
-    -webkit-user-select: none; /* For Chrome, Safari, and others */
-    -moz-user-select: none;    /* For Firefox */
-    -ms-user-select: none;     /* For Internet Explorer/Edge */
-    user-select: none;         /* Standard syntax */
+    /* -webkit-user-select: none; For Chrome, Safari, and others */
+    /* -moz-user-select: none;    For Firefox */
+    /* -ms-user-select: none;     For Internet Explorer/Edge */
+    /* user-select: none;         Standard syntax */
+}
+.swiper-button-prev, .swiper-button-next{
+    display: none;
 }
