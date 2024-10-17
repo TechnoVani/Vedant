@@ -30,12 +30,12 @@ const cardData = [
     videoId: '5gQ0qZo1-Nc',
   },
   {
-    id: 4,
+    id: 5,
     img: 'https://img.youtube.com/vi/J2RX8rGwZtg/hqdefault.jpg',
     videoId: 'J2RX8rGwZtg',
   },
   {
-    id: 4,
+    id: 6,
     img: 'https://img.youtube.com/vi/zFr6E5H5sRg/hqdefault.jpg',
     videoId: 'zFr6E5H5sRg',
   },
@@ -80,31 +80,37 @@ const videoData = [
     id: 1,
     img: "https://img.youtube.com/vi/RdVfnDMCINw/hqdefault.jpg",
     videoId: "RdVfnDMCINw",
+    name: "जय श्री राम |"
   },
   {
     id: 2,
     img: "https://img.youtube.com/vi/TpOsJ7cHd9w/hqdefault.jpg",
     videoId: "TpOsJ7cHd9w",
+    name: "जय श्री राम 🙏 |"
   },
   {
     id: 3,
     img: "https://img.youtube.com/vi/5gQ0qZo1-Nc/hqdefault.jpg",
     videoId: "5gQ0qZo1-Nc",
+    name: "शिव रुद्राष्टकम |"
   },
   {
     id: 4,
     img: "https://img.youtube.com/vi/J2RX8rGwZtg/hqdefault.jpg",
     videoId: "J2RX8rGwZtg",
+    name: "श्री गणेश श्लोक |"
   },
   {
     id: 5,
     img: "https://img.youtube.com/vi/eYgYvQFs6G8/hqdefault.jpg",
     videoId: "eYgYvQFs6G8",
+    name: "श्री राम स्तुति भजन |"
   },
   {
     id: 6,
     img: "https://img.youtube.com/vi/zFr6E5H5sRg/hqdefault.jpg",
     videoId: "zFr6E5H5sRg",
+    name: "Meri Maiya Aayi Hain Dwar |"
   },
 ];
 
@@ -172,7 +178,7 @@ export function SwiperDiv({ contentType }) {
   return (
     <>
       <div className="py-2">
-        <h1>NEW <span className="font-semibold">RELEASES</span></h1>
+        <h1>NEW <span className="font-semibold text-red-900">RELEASES</span></h1>
       </div>
       <div className="max-w-full h-fit ">
         <Swiper
@@ -230,7 +236,7 @@ export function SwiperDiv({ contentType }) {
                   className="absolute bottom-[-20%]  h-[20%]  w-full overflow-hidden  bg-black text-white transition-all duration-500 ease-in-out opacity-0 group-hover:bottom-0 group-hover:opacity-100"
                   style={{ width: '100%' }}
                 >
-                  <p className="text-white z-50">hel</p> {/* Assuming `card.text` contains the card's text */}
+                  <p className="text-white z-50 p-2">{card.name}</p> {/* Assuming `card.text` contains the card's text */}
                 </div>
               </div>
             </SwiperSlide>
