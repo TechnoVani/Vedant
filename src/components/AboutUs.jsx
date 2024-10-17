@@ -3,12 +3,12 @@ import React from "react";
 const AboutUs = () => {
   return (
     <>
-      <section className=" overflow-hidden h-full py-10 bg-gray-50 dark:bg-white">
+      <section className=" overflow-hidden h-full py-10 ">
         <div className="px-4 flex justify-center items-center h-full mx-auto sm:px-6 lg:px-8 max-w-7xl">
           <div className="grid items-center gap-2 grid-cols-1 md:grid-cols-2">
-          <div className=" w-full h-full flex justify-center items-center ">
+            <div className=" w-full h-full flex justify-center items-center ">
               <img
-                className=" h-52 "
+                className=" h-52 rounded-full"
                 src="/images/god gallery/vedanttttt.jpg"
                 alt=""
               />
@@ -17,26 +17,70 @@ const AboutUs = () => {
               {/* <img className="relative w-full xl:max-w-lg  xl:mx-auto 2xl:origin-bottom " src="https://cdn.rareblocks.xyz/collection/celebration/images/team/1/business-woman.png" alt="" /> */}
             </div>
             <div className=" w-full h-full ">
-              <h2 className="text-3xl font-bold leading-tight text-black dark:text-black sm:text-4xl lg:text-5xl">
-                Vedant Devotions
+              <h1 className="text-4xl font-semibold pb-1 border-b-4 border-gray-900 max-w-max mb-3">About Us</h1>
+              <h2 className="text-xl leading-tight text-gray-900 dark:text-black sm:text-4xl lg:text-3xl">
+                Welcome to Vedant Devotion: Where Spirituality Sings
               </h2>
-              <p className="max-w-xl mt-3 text-lg leading-relaxed text-gray-800 dark:text-zinc-800 text-justify">
-                Welcome to Vedant Devotions! We are a digital space dedicated to
-                spreading the essence of devotion and spirituality through
-                captivating images and inspiring content. Our mission is to
-                nurture the spiritual journeys of our audience by sharing
-                visually stunning, soul-enriching content that resonates with
-                the values of peace, faith, and inner growth. At Vedant
-                Devotions, we believe in the power of visual storytelling to
-                uplift and connect people with the divine. Our YouTube channel
-                features a collection of devotion-themed imagery and spiritual
-                insights, designed to bring moments of tranquility and
-                reflection into your daily life.
+              <p className="max-w-xl mt-3 text-md leading-relaxed text-gray-800 dark:text-zinc-800 text-justify">
+
+
+                At Vedant Devotion, we embark on a vibrant journey through the rich tapestry of ancient Indian mythology, civilization, and culture.
+                We delve into the wisdom of the Puranas and Vedas, exploring the vast world of our 33 crore deities, not just through stories and scriptures,
+                but also through the enchanting power of music.
+
               </p>
             </div>
 
           </div>
         </div>
+        <section className="container mx-auto px-4 py-12">
+          <div className="mb-8 ">
+
+          </div>
+
+
+          <div className="bg-white shadow-lg rounded-lg p-6 mb-8">
+            <h2 className="text-2xl font-semibold mb-4 text-gray-900">Melodies of the Divine</h2>
+            <p className="text-md leading-relaxed text-justify">
+              Our platform resonates with the soulful renditions of bhajans and dharmik geet. We believe that music transcends language and beliefs,
+              becoming a universal language of the soul. Through captivating tunes and heartfelt lyrics, we aim to awaken your inner peace, ignite
+              your devotion, and connect you to the divine essence within.
+            </p>
+          </div>
+
+
+          <div className="bg-white shadow-lg rounded-lg p-6 mb-8">
+            <h2 className="text-2xl font-semibold mb-4 text-gray-900">Amplifying New Voices</h2>
+            <p className="text-md leading-relaxed text-justify">
+              Vedant Devotion is not just a repository of spiritual music; it's a launchpad for talented singers and musicians.
+              We provide a platform for upcoming artists to showcase their work and share their musical interpretations of our cultural heritage
+              with the world. We believe in nurturing their talent and amplifying their voices, creating a harmonious confluence of tradition and innovation.
+            </p>
+          </div>
+
+
+          <div className="bg-white shadow-lg rounded-lg p-6 mb-8">
+            <h2 className="text-2xl font-semibold mb-4 text-gray-900">Experience & Expertise</h2>
+            <p className="text-md leading-relaxed text-justify">
+              Our team boasts extensive experience in producing and directing spiritual content for diverse national and international platforms.
+              We understand the power of music to resonate across cultures and touch hearts worldwide. With passion, dedication, and meticulous
+              attention to detail, we strive to create content that is both authentic and engaging.
+            </p>
+          </div>
+
+
+          <div className="bg-white shadow-lg rounded-lg p-6">
+            <h2 className="text-2xl font-semibold mb-4 text-gray-900">Join us on this soulful journey</h2>
+            <p className="text-md leading-relaxed mb-6 text-justify">
+              Whether you're a seasoned devotee, a curious explorer, or a budding musician, Vedant Devotion welcomes you with open arms.
+              Discover the magic of ancient wisdom reimagined through music, lose yourself in the melody of devotion, and find your unique connection to the divine.
+            </p>
+            <p className="text-md leading-relaxed text-justify">
+              Explore our website, listen to our music, and embark on your spiritual odyssey with Vedant Devotion.
+              Should you require any further information or have specific inquiries regarding particular services or projects, please feel free to reach out to us.
+            </p>
+          </div>
+        </section>
       </section>
       <div className="bg-black">
         <section
@@ -55,34 +99,8 @@ const AboutUs = () => {
           <div className="relative mx-auto max-w-7xl z-10 grid grid-cols-1 gap-10 pt-14 sm:grid-cols-2 lg:grid-cols-3">
             {/* Card 1 */}
             <div className="rounded-md border border-neutral-800 bg-neutral-900/50 p-8 text-center shadow">
-              <div
-                className="button-text mx-auto flex h-12 w-12 items-center justify-center rounded-md border"
-                style={{
-                  backgroundImage:
-                    "linear-gradient(rgb(80, 70, 229) 0%, rgb(43, 49, 203) 100%)",
-                  borderColor: "rgb(93, 79, 240)",
-                }}
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="icon icon-tabler icon-tabler-color-swatch"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  strokeWidth="2"
-                  stroke="currentColor"
-                  fill="none"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                  <path d="M19 3h-4a2 2 0 0 0 -2 2v12a4 4 0 0 0 8 0v-12a2 2 0 0 0 -2 -2" />
-                  <path d="M13 7.35l-2 -2a2 2 0 0 0 -2.828 0l-2.828 2.828a2 2 0 0 0 0 2.828l9 9" />
-                  <path d="M7.3 13h-2.3a2 2 0 0 0 -2 2v4a2 2 0 0 0 2 2h12" />
-                  <line x1="17" y1="17" x2="17" y2="17.01" />
-                </svg>
-              </div>
-              <h3 className="mt-6 font-semibold text-gray-200">
+
+              <h3 className="mt-0 mb-10 pb-2 text-xl border-b-2 font-semibold text-gray-200">
                 Our Mission
               </h3>
               <p className="my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-400 text-justify">
@@ -97,31 +115,8 @@ const AboutUs = () => {
 
             {/* Card 2 */}
             <div className="rounded-md border border-neutral-800 bg-neutral-900/50 p-8 text-center shadow">
-              <div
-                className="button-text mx-auto flex h-12 w-12 items-center justify-center rounded-md border"
-                style={{
-                  backgroundImage:
-                    "linear-gradient(rgb(80, 70, 229) 0%, rgb(43, 49, 203) 100%)",
-                  borderColor: "rgb(93, 79, 240)",
-                }}
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="icon icon-tabler icon-tabler-bolt"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  strokeWidth="2"
-                  stroke="currentColor"
-                  fill="none"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                  <polyline points="13 3 13 10 19 10 11 21 11 14 5 14 13 3" />
-                </svg>
-              </div>
-              <h3 className="mt-6 font-semibold text-gray-200">
+
+              <h3 className="mt-0 mb-10 pb-2 text-xl border-b-2 font-semibold text-gray-200">
                 Our Vision
               </h3>
               <p className="my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-400 text-justify">
@@ -136,36 +131,8 @@ const AboutUs = () => {
 
             {/* Card 3 */}
             <div className="rounded-md border border-neutral-800 bg-neutral-900/50 p-8 text-center shadow">
-              <div
-                className="button-text mx-auto flex h-12 w-12 items-center justify-center rounded-md border"
-                style={{
-                  backgroundImage:
-                    "linear-gradient(rgb(80, 70, 229) 0%, rgb(43, 49, 203) 100%)",
-                  borderColor: "rgb(93, 79, 240)",
-                }}
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="icon icon-tabler icon-tabler-tools"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  strokeWidth="2"
-                  stroke="currentColor"
-                  fill="none"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                  <path d="M3 21h4l13 -13a1.5 1.5 0 0 0 -4 -4l-13 13v4" />
-                  <line x1="14.5" y1="5.5" x2="18.5" y2="9.5" />
-                  <polyline points="12 8 7 3 3 7 8 12" />
-                  <line x1="7" y1="8" x2="5.5" y2="9.5" />
-                  <polyline points="16 12 21 17 17 21 12 16" />
-                  <line x1="16" y1="17" x2="14.5" y2="18.5" />
-                </svg>
-              </div>
-              <h3 className="mt-6 font-semibold text-gray-200">
+
+              <h3 className="mt-0 mb-10 pb-2 text-xl border-b-2 font-semibold text-gray-200">
                 Our Goal
               </h3>
               <p className="my-4 mb-0 font-normal tracking-wide text-gray-400 text-justify leading-relaxed">
@@ -264,8 +231,11 @@ const AboutUs = () => {
         <div className="absolute bottom-0 right-0 z-0 h-1/3 w-full"
             style="background-image: linear-gradient(to left top, rgba(220, 38, 38, 0.2) 0%, transparent 50%, transparent 100%); border-color: rgba(92, 79, 240, 0.2);">
         </div> */}
+
+
         </section>
       </div>
+
     </>
   );
 };

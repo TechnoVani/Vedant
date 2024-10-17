@@ -17,12 +17,16 @@ const Home = () => {
 
   return (
     <div className="justify-center items-center flex">
+
       <div className="container">
         {/* <ToastContainer /> Toast container */}
         {/* <div className="py-2  bg-red-300"> */}
 
         {/* </div> */}
-        <section className="relative   w-full py-2 bg-blend-multiply">
+        <section className="relative w-full py-2">
+          <div className="py-2 px-2">
+            <h1>NEW <span className="font-semibold text-red-900">RELEASES</span></h1>
+          </div>
           <SwiperDiv contentType="videos" />
 
           {/* <video
@@ -49,13 +53,13 @@ const Home = () => {
 
         </section>
         <SwiperSecond />
-        <section className="py-14 lg:py-10 relative shadow-zinc-600 z-0 bg-zinc-300">
+        <section className="py-14 lg:py-10 relative shadow-zinc-600 z-0">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative text-center">
             <h3 className="max-w-2xl mx-auto text-center font-manrope font-bold text-4xl text-gray-900 mb-5 md:text-3xl md:leading-normal">
               Discover Our Path to <span className="text-red-600">Devotion </span>
             </h3>
 
-            <p className="text-center text-lg font-normal leading-7 text-gray-500 mb-9">
+            <p className=" text-lg font-normal leading-7 text-gray-500 mb-9 text-justify">
               At the heart of our mission is a dedication to fostering spiritual
               growth and connection through the power of devotion. Our website
               offers a vast collection of devotional videos, prayers, and
@@ -79,7 +83,7 @@ const Home = () => {
 
             <a href="/videos">
               <p
-                className="mb-2 text-base font-medium tracking-tight text-white dark:text-white"
+                className="mb-2 text-base font-medium tracking-tight text-white dark:text-white border px-3 py-1 rounded-full"
               >
                 See More →
               </p>
@@ -99,7 +103,7 @@ const Home = () => {
 
             <a href="/videos">
               <p
-                className="mb-2 text-base font-medium tracking-tight text-black dark:text-black"
+                className="mb-2 text-base font-medium tracking-tight text-black dark:text-black border px-3 py-1 rounded-full border-black"
               >
                 See More →
               </p>

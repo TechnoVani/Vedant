@@ -1,7 +1,9 @@
-import React, { useEffect } from 'react'
+
 import Header from './components/header-footer/Header'
 import Routing from './utils/Routing'
 import Footer from './components/header-footer/Footer'
+
+import React, { useEffect, useState } from 'react';
 
 
 const App = () => {
@@ -10,8 +12,11 @@ const App = () => {
   //     event.preventDefault(); // Disable right-click
   //   });
   // }, []);
+
+ 
+
   return (
-    <div className='bg-[#fffef6]'>
+    <div >
       <Header />
       <Routing />
       <Footer />
