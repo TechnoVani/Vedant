@@ -11,11 +11,11 @@ const App = () => {
   //   });
   // }, []);
   return (
-    <>
-    <Header />
-    <Routing />
-   <Footer/>
-    </>
+    <div className='bg-[#fffef6]'>
+      <Header />
+      <Routing />
+      <Footer />
+    </div>
   )
 }
 
