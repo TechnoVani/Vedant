@@ -177,9 +177,9 @@ export function SwiperDiv({ contentType }) {
   };
   return (
     <>
-      <div className="py-2">
+      {/* <div className="py-2">
         <h1>NEW <span className="font-semibold text-red-900">RELEASES</span></h1>
-      </div>
+      </div> */}
       <div className="max-w-full h-fit ">
         <Swiper
           loop={true}
@@ -225,7 +225,9 @@ export function SwiperDiv({ contentType }) {
           {/* Loop through the cardData array */}
           {data.map((card, index) => (
             <SwiperSlide key={card.id} className="select-none p-1 w-full">
-              <div className="relative h-[170px] w-full overflow-hidden  cursor-pointer bg-blue-gray-500  rounded-md group">
+              <div
+              onClick={() => openModal(card.videoId)}
+              className="relative h-[170px] w-full overflow-hidden cursor-pointer bg-blue-gray-500  rounded-md group">
                 {/* Image */}
                 <img
                   src={card.img}

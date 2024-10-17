@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -7,27 +8,28 @@ const Footer = () => {
         <div className="grid grid-cols-1 gap-2 items-center lg:grid-cols-2">
           {/* Logo and Description */}
           <div className="mb-6 p-7 grid grid-cols-1 justify-center gap-4 md:grid-cols-2 md:mb-0">
-            <a href="https://flowbite.com/" className="flex gap-2 flex-col ">
-              <h1 className="text-lg  text-center inline-flex  md:text-2xl font-semibold text-white">
-                VEDANT <span className="text-red-600">DEVOTIONS</span>
-              </h1>
+            <Link to='/' className="flex items-center justify-center gap-2 flex-col ">
+
               <img
                 src="/images/god gallery/vedanttttt.jpg"
-                className="h-40 w-52 mr-3"
-                alt="Flowbite Logo"
+                className=" w-[8rem] mr-3 rounded-full"
+                alt="Logo"
               />
-            </a>
+              <h1 className="text-lg my-2 text-center inline-flex  md:text-2xl font-semibold text-white">
+                VEDANT <span className="text-red-600 px-2">DEVOTIONS</span>
+              </h1>
+            </Link>
             <div>
-            <p className="mb-3  pt-3 text-gray-100 dark:text-gray-400">
-            Welcome to Vedant Devotions! We are a digital space dedicated to spreading the essence of devotion and spirituality through captivating images and inspiring content. </p>
-              
+              <p className="mb-3  pt-3 text-gray-100 dark:text-gray-400">
+                Welcome to Vedant Devotions! We are a digital space dedicated to spreading the essence of devotion and spirituality through captivating images and inspiring content. </p>
+
             </div>
           </div>
 
           {/* Links Sections */}
-          <div className="grid lg:w-4/5 grid-cols-1 gap-8 px-4 py-6 lg:place-items-center w-full lg:py-8 md:grid-cols-2">
+          <div className="flex justify-between px-10 md:justify-end md:gap-20">
             {/* Company Section */}
-         
+
 
             {/* Help Center Section */}
             <div className='flex flex-col  '>
@@ -92,9 +94,9 @@ const Footer = () => {
         <div className="sm:flex sm:items-center sm:justify-between">
           <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
             © 2023{' '}
-            <a href="https://flowbite.com/" className="hover:underline">
-              Flowbite™
-            </a>
+            <Link to="/" className="hover:underline">
+              Vedant Devotions
+            </Link>
             . All Rights Reserved.
           </span>
           <div className="flex mt-4 sm:justify-center sm:mt-0">
