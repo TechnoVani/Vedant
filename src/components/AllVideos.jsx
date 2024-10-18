@@ -3,7 +3,7 @@ import {
   Tabs,
   TabsHeader,
   TabsBody,
-  Tab,
+  Tab, 
   TabPanel,
 } from "@material-tailwind/react";
 import VideoModal from "./Heropage/HomeComponents/VideoModal";
