@@ -1,8 +1,12 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 
 const AboutUs = () => {
   return (
     <>
+    <Helmet>
+        <title>Vedant Devotions | About Us</title>
+      </Helmet>
       <section className=" overflow-hidden h-full py-10 ">
         <div className="px-4 flex justify-center items-center h-full mx-auto sm:px-6 lg:px-8 max-w-7xl">
           <div className="grid items-center gap-2 grid-cols-1 md:grid-cols-2">
