@@ -19,7 +19,7 @@ const AboutUs = () => {
             <div className=" w-full h-full ">
               <h1 className="text-4xl font-semibold pb-1 border-b-4 border-gray-900 max-w-max mb-3">About Us</h1>
               <h2 className="text-xl leading-tight text-gray-900 dark:text-black sm:text-4xl lg:text-3xl">
-                Welcome to Vedant Devotion: Where Spirituality Sings
+                Welcome to ttVedant Devotion: Where Spirituality Sings
               </h2>
               <p className="max-w-xl mt-3 text-md leading-relaxed text-gray-800 dark:text-zinc-800 text-justify">
 
