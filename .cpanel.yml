@@ -1,0 +1,6 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/viditmed/public_html/vedantdevotions.com/New
+    - /bin/cp -r build/* $DEPLOYPATH/
+    - echo "Deployed successfully!"
