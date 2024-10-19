@@ -7,6 +7,7 @@ import SwiperSecond from "./HomeComponents/SwiperSecond";
 import { Helmet } from "react-helmet";
 import VideoSlider from "./HomeComponents/VideoSlider";
 
+
 const Home = () => {
   const location = useLocation();
 
@@ -19,14 +20,17 @@ const Home = () => {
 
   return (
     <div className="justify-center items-center flex">
+
        <Helmet>
         <title>Vedant Devotions | Home</title>
       </Helmet>
+
       <div className="container">
         {/* <ToastContainer /> Toast container */}
         {/* <div className="py-2  bg-red-300"> */}
 
         {/* </div> */}
+
         <section className="relative w-full py-2 ">
           <div className="text-center mt-5 py-2 bg-gray-200">
             <h3 className='mx-auto font-manrope font-semibold bg-gray-200 text-gray-900 text-2xl md:leading-normal'>New <span className=" text-red-600">Releases</span></h3>
@@ -56,6 +60,7 @@ const Home = () => {
         <section>
 
         </section>
+
         {/* <SwiperSecond /> */}
         <VideoSlider/>
         <section className="py-14 lg:py-10 relative shadow-zinc-600 z-0">
@@ -96,12 +101,14 @@ const Home = () => {
           </div>
           <SwiperDiv contentType="videos" />
         </section> */}
+
         <section className="max-w-full mb-10 py-6 ">
           
           <div className='flex items-center justify-between py-2 px-2 mt-5 bg-gray-200'>
                 <h1 className='font-manrope font-semibold text-gray-900 text-2xl md:leading-normal'>Trending <span className='text-red-600'>Shorts</span></h1>
                 <Link to="/videos" className='border px-3 py-1 rounded-full border-black hover:text-red-600 hover:border-red-600 hover:bg-white hover:shadow-lg duration-150'>See More →</Link>
             </div>
+
           <SwiperDiv contentType="shorts" />
         </section>
       </div>

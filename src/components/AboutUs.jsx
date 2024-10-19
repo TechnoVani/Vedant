@@ -1,12 +1,16 @@
 import React from "react";
+
 import { Helmet } from "react-helmet";
+
 
 const AboutUs = () => {
   return (
     <>
+
     <Helmet>
         <title>Vedant Devotions | About Us</title>
       </Helmet>
+
       <section className=" overflow-hidden h-full py-10 ">
         <div className="px-4 flex justify-center items-center h-full mx-auto sm:px-6 lg:px-8 max-w-7xl">
           <div className="grid items-center gap-2 grid-cols-1 md:grid-cols-2">
@@ -23,7 +27,9 @@ const AboutUs = () => {
             <div className=" w-full h-full ">
               <h1 className="text-4xl font-semibold pb-1 border-b-4 border-gray-900 max-w-max mb-3">About Us</h1>
               <h2 className="text-xl leading-tight text-gray-900 dark:text-black sm:text-4xl lg:text-3xl">
+
                 Welcome to Vedant Devotion: Where Spirituality Sings
+
               </h2>
               <p className="max-w-xl mt-3 text-md leading-relaxed text-gray-800 dark:text-zinc-800 text-justify">
 

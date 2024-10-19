@@ -1,0 +1,11 @@
+---
+deployment:
+  tasks:
+    - echo "Installing dependencies..."
+    - /usr/local/bin/npm install
+    - echo "Building the React app..."
+    - /usr/local/bin/npm run build
+    - export DEPLOYPATH=/home/viditmed/public_html/vedantdevotions.com/New
+    - echo "Copying build files..."
+    - /bin/cp -r build/* $DEPLOYPATH/
+    - echo "Deployment completed!"

@@ -2,7 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
+
   const currentYear = new Date().getFullYear();
+
   return (
     <footer className=" bg-gray-900">
       <div className="w-full max-w-screen p-4 py-6 lg:py-8">
@@ -39,6 +41,7 @@ const Footer = () => {
               </h2>
               <ul className="text-gray-500  dark:text-gray-400 font-medium">
                 <li className="mb-4">
+
                   <Link to="/" className="hover:underline">
                     Home
                   </Link>
@@ -57,6 +60,7 @@ const Footer = () => {
                   <Link to="/contact" className="hover:underline">
                     Contact Us
                   </Link>
+
                 </li>
               </ul>
             </div>
@@ -68,6 +72,7 @@ const Footer = () => {
               </h2>
               <ul className="text-gray-500  dark:text-gray-400 font-medium">
                 <li className="mb-4">
+
                   <Link to="#" className="hover:underline">
                     Privacy Policy
                   </Link>
