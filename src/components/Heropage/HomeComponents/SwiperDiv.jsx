@@ -80,37 +80,37 @@ const videoData = [
     id: 1,
     img: "https://img.youtube.com/vi/RdVfnDMCINw/hqdefault.jpg",
     videoId: "RdVfnDMCINw",
-    name: "जय श्री राम |"
+    name: "Jai Shri Ram"
   },
   {
     id: 2,
     img: "https://img.youtube.com/vi/TpOsJ7cHd9w/hqdefault.jpg",
     videoId: "TpOsJ7cHd9w",
-    name: "जय श्री राम 🙏 |"
+    name: "Jai Shri Ram"
   },
   {
     id: 3,
     img: "https://img.youtube.com/vi/5gQ0qZo1-Nc/hqdefault.jpg",
     videoId: "5gQ0qZo1-Nc",
-    name: "शिव रुद्राष्टकम |"
+    name: "Shiva Rudrashtakam"
   },
   {
     id: 4,
     img: "https://img.youtube.com/vi/J2RX8rGwZtg/hqdefault.jpg",
     videoId: "J2RX8rGwZtg",
-    name: "श्री गणेश श्लोक |"
+    name: "Shri Ganesh Shloka"
   },
   {
     id: 5,
     img: "https://img.youtube.com/vi/eYgYvQFs6G8/hqdefault.jpg",
     videoId: "eYgYvQFs6G8",
-    name: "श्री राम स्तुति भजन |"
+    name: "Shri Ram Stuti Bhajan"
   },
   {
     id: 6,
     img: "https://img.youtube.com/vi/zFr6E5H5sRg/hqdefault.jpg",
     videoId: "zFr6E5H5sRg",
-    name: "Meri Maiya Aayi Hain Dwar |"
+    name: "Meri Maiya Aayi Hain Dwar"
   },
 ];
 
@@ -119,46 +119,55 @@ const shortsData = [
     id: 1,
     img: "https://img.youtube.com/vi/G3p6MCQDK2s/hqdefault.jpg",
     videoId: "G3p6MCQDK2s",
+    name:"Jai Shri Ram"
   },
   {
     id: 2,
     img: "https://img.youtube.com/vi/gvPSWTBDUDk/hqdefault.jpg",
     videoId: "gvPSWTBDUDk",
+    name:"Jai Shri Ram"
   },
   {
     id: 3,
     img: "https://img.youtube.com/vi/KfroyqYB3_s/hqdefault.jpg",
     videoId: "KfroyqYB3_s",
+    name:"Jai Shri Ram"
   },
   {
     id: 4,
     img: "https://img.youtube.com/vi/MpB9x2h8rt0/hqdefault.jpg",
     videoId: "MpB9x2h8rt0",
+    name:"Jai Shri Ram"
   },
   {
     id: 5,
     img: "https://img.youtube.com/vi/NJcG_QaE6XQ/hqdefault.jpg",
     videoId: "NJcG_QaE6XQ",
+    name:"#religion #motivation"
   },
   {
     id: 6,
     img: "https://img.youtube.com/vi/wZsM302HyJk/hqdefault.jpg",
     videoId: "wZsM302HyJk",
+    name:"Jai Shri Ram"
   },
   {
     id: 7,
     img: "https://img.youtube.com/vi/QA3AU7mypwQ/hqdefault.jpg",
     videoId: "QA3AU7mypwQ",
+    name:"Meri Maiyya #religion"
   },
   {
     id: 8,
     img: "https://img.youtube.com/vi/Dr6CgU90JkU/hqdefault.jpg",
     videoId: "Dr6CgU90JkU",
+    name:"Shree Ram Stuti "
   },
   {
     id: 9,
     img: "https://img.youtube.com/vi/SZ_Tn8kJeao/hqdefault.jpg",
     videoId: "SZ_Tn8kJeao",
+    name:"Jai Shri Ram"
   },
 ];
 export function SwiperDiv({ contentType }) {
@@ -180,7 +189,7 @@ export function SwiperDiv({ contentType }) {
       {/* <div className="py-2">
         <h1>NEW <span className="font-semibold text-red-900">RELEASES</span></h1>
       </div> */}
-      <div className="max-w-full h-fit ">
+      <div className="max-w-full h-fit my-5">
         <Swiper
           loop={true}
           slidesPerView={4}
