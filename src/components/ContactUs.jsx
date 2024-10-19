@@ -1,5 +1,6 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
+import { Link } from 'react-router-dom'
 
 const ContactUs = () => {
     return (
@@ -23,10 +24,13 @@ const ContactUs = () => {
                     <div class="mt-6">
                         <div class="grid sm:grid-cols-2 items-start gap-14 p-8 mx-auto max-w-6xl bg-white shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] rounded-md font-[sans-serif]">
                             <div className='md:w-4/5 bg-[#fffaf5] border flex flex-col items-start justify-center p-5 rounded shadow-xl'>
-                                <p className="text-base text-center font-semibold uppercase tracking-wide text-blue-600 dark:text-black">
-                                    Contact us
-                                </p>
-                                <p class="text-sm text-gray-700 mt-4">At Vedant Devotions, we truly value your feedback and inquiries. Please feel free to reach out to us for any questions, suggestions, or collaborations regarding our spiritual content!.</p>
+                                <div className='w-full flex flex-col items-center justify-center gap-2'>
+                                    <img className='w-14 rounded-full' src="images/god gallery/vedanttttt.jpg" alt="logo" />
+                                    <p className="text-center font-semibold uppercase tracking-wide text-red-800 dark:text-black">
+                                        Contact us
+                                    </p>
+                                </div>
+                                <p class="text-sm text-gray-700 mt-4 text-justify">At Vedant Devotions, we truly value your feedback and inquiries. Please feel free to reach out to us for any questions, suggestions, or collaborations regarding our spiritual content!.</p>
 
                                 <div class="mt-4">
                                     <ul class="mt-4">
@@ -39,9 +43,9 @@ const ContactUs = () => {
                                                         data-original="#000000" />
                                                 </svg>
                                             </div>
-                                            <a href="#" class="text-[#007bff] text-sm ml-4">
-                                                <strong>info@vedantdevotions.comm</strong>
-                                            </a>
+                                            <Link to="mailto:info@vedantdevotions.com" class="text-[#007bff] text-sm ml-4">
+                                                <strong>info@vedantdevotions.com</strong>
+                                            </Link>
                                         </li>
                                     </ul>
                                     <ul class="mt-4">
@@ -79,17 +83,17 @@ const ContactUs = () => {
                             <form class="ml-auo space-y-4">
 
                                 <input type='text' placeholder='Enter Full Name'
-                                    class="w-full text-gray-800 rounded-md py-2.5 px-4 border border-gray-700 text-sm outline-blue-500" />
+                                    class="w-full text-gray-800 rounded-md py-2.5 px-4 border border-gray-700 text-sm outline-red-800" />
                                 <input type='text' placeholder='Enter Phone Number'
-                                    class="w-full text-gray-800 rounded-md py-2.5 px-4 border border-gray-700 text-sm outline-blue-500" />
+                                    class="w-full text-gray-800 rounded-md py-2.5 px-4 border border-gray-700 text-sm outline-red-800" />
                                 <input type='email' placeholder='Enter Email Address'
-                                    class="w-full text-gray-800 rounded-md py-2.5 px-4 border border-gray-700 text-sm outline-blue-500" />
+                                    class="w-full text-gray-800 rounded-md py-2.5 px-4 border border-gray-700 text-sm outline-red-800" />
                                 <input type='text' placeholder='Subject'
-                                    class="w-full text-gray-800 rounded-md py-2.5 px-4 border border-gray-700 text-sm outline-blue-500" />
+                                    class="w-full text-gray-800 rounded-md py-2.5 px-4 border border-gray-700 text-sm outline-red-800" />
                                 <textarea placeholder='Message' rows="4"
-                                    class="w-full text-gray-800 rounded-md px-4 border border-gray-700 text-sm pt-2.5 outline-blue-500"></textarea>
+                                    class="w-full text-gray-800 rounded-md px-4 border border-gray-700 text-sm pt-2.5 outline-red-800"></textarea>
                                 <button type='button'
-                                    class="text-white bg-blue-500 hover:bg-blue-600 rounded-md text-sm px-4 py-3 w-full !mt-6">Send</button>
+                                    class="text-white bg-red-800 hover:bg-red-600 rounded-md text-sm px-4 py-3 w-full !mt-6">Send</button>
                             </form>
                         </div>
                     </div>

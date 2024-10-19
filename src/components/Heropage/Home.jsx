@@ -64,7 +64,7 @@ const Home = () => {
               Discover Our Path to <span className="text-red-600">Devotion </span>
             </h3>
 
-            <p className=" text-lg font-normal leading-7 text-gray-700 mb-9 text-justify px-3">
+            <p className=" text-md font-normal leading-7 text-gray-700 mb-9 text-justify px-3">
               At the heart of our mission is a dedication to fostering spiritual
               growth and connection through the power of devotion. Our website
               offers a vast collection of devotional videos, prayers, and
