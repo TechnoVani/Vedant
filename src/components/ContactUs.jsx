@@ -40,7 +40,7 @@ const ContactUs = () => {
                                                 </svg>
                                             </div>
                                             <a href="#" class="text-[#007bff] text-sm ml-4">
-                                                <strong>info@vedantdevotions.com</strong>
+                                                <strong>info@vedantdevotions.comm</strong>
                                             </a>
                                         </li>
                                     </ul>
