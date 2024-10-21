@@ -16,7 +16,7 @@ const Footer = () => {
             <Link to='/' className="flex items-center justify-center gap-2 flex-col ">
 
               <img
-                src="/images/god gallery/vedanttttt.jpg"
+                src="images/god gallery/vedanttttt.jpg"
                 className=" w-[8rem] mr-3 rounded-full"
                 alt="Logo"
               />
