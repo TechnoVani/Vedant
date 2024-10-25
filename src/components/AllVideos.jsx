@@ -8,7 +8,6 @@ import {
 } from "@material-tailwind/react";
 import VideoModal from "./Heropage/HomeComponents/VideoModal";
 import { Helmet } from "react-helmet";
-
  // Ensure the path is correct for your project
 
 // Example card data for HTML and React sections
@@ -121,20 +120,19 @@ const AllVideos = () => {
 
   return (
     <div>
-
       <Helmet>
         <title>Vedant Devotions | All-Videos</title>
+        <meta name="description" content="Explore a curated collection of spiritual videos and shorts. Discover insights and teachings that inspire." />
+  <meta name="keywords" content="spiritual videos, vedant devotions, motivational shorts, teachings" />
+  
       </Helmet>
       <Tabs id="custom-animation" className="pt-5" value={activeTab}>
         <div className="flex justify-center bg-gray-200 py-2">
-
           <TabsHeader
             className="rounded-none w-60 border-b border-blue-gray-50 bg-transparent p-0"
             indicatorProps={{
               className:
-
                 "bg-transparent border-b-2 border-gray-900 shadow-none rounded-none ",
-
             }}
           >
             {data.map(({ label, value }) => (
@@ -143,7 +141,7 @@ const AllVideos = () => {
                 value={value}
                 onClick={() => setActiveTab(value)}
                 className={activeTab === value ? "text-gray-900" : ""}
-
+                
               >
                 {label}
               </Tab>

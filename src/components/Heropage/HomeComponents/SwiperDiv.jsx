@@ -78,37 +78,43 @@ function customPagination(_, className) {
 const videoData = [
   {
     id: 1,
-    img: "https://img.youtube.com/vi/RdVfnDMCINw/hqdefault.jpg",
+    img: "/images/Slider1/video1.avif",
     videoId: "RdVfnDMCINw",
     name: "Jai Shri Ram"
   },
   {
     id: 2,
-    img: "https://img.youtube.com/vi/TpOsJ7cHd9w/hqdefault.jpg",
+    img: "/images/Slider1/video2.avif",
     videoId: "TpOsJ7cHd9w",
     name: "Jai Shri Ram"
   },
   {
     id: 3,
-    img: "https://img.youtube.com/vi/5gQ0qZo1-Nc/hqdefault.jpg",
+    img: "/images/Slider1/video3.avif",
     videoId: "5gQ0qZo1-Nc",
     name: "Shiva Rudrashtakam"
   },
   {
     id: 4,
-    img: "https://img.youtube.com/vi/J2RX8rGwZtg/hqdefault.jpg",
+    img: "/images/Slider1/video4.avif",
     videoId: "J2RX8rGwZtg",
     name: "Shri Ganesh Shloka"
   },
   {
     id: 5,
-    img: "https://img.youtube.com/vi/eYgYvQFs6G8/hqdefault.jpg",
+    img: "/images/Slider1/video5.avif",
     videoId: "eYgYvQFs6G8",
     name: "Shri Ram Stuti Bhajan"
   },
   {
     id: 6,
-    img: "https://img.youtube.com/vi/zFr6E5H5sRg/hqdefault.jpg",
+    img: "/images/Slider1/video6.avif",
+    videoId: "zFr6E5H5sRg",
+    name: "Meri Maiya Aayi Hain Dwar"
+  },
+  {
+    id: 7,
+    img: "/images/Slider1/video7.avif",
     videoId: "zFr6E5H5sRg",
     name: "Meri Maiya Aayi Hain Dwar"
   },
@@ -117,55 +123,55 @@ const videoData = [
 const shortsData = [
   {
     id: 1,
-    img: "https://img.youtube.com/vi/G3p6MCQDK2s/hqdefault.jpg",
+    img: "/images/Slider2/shorts1.avif",
     videoId: "G3p6MCQDK2s",
     name:"Jai Shri Ram"
   },
   {
     id: 2,
-    img: "https://img.youtube.com/vi/gvPSWTBDUDk/hqdefault.jpg",
+    img: "/images/Slider2/shorts2.avif",
     videoId: "gvPSWTBDUDk",
     name:"Jai Shri Ram"
   },
   {
     id: 3,
-    img: "https://img.youtube.com/vi/KfroyqYB3_s/hqdefault.jpg",
+    img: "/images/Slider2/shorts3.avif",
     videoId: "KfroyqYB3_s",
     name:"Jai Shri Ram"
   },
   {
     id: 4,
-    img: "https://img.youtube.com/vi/MpB9x2h8rt0/hqdefault.jpg",
+    img: "/images/Slider2/shorts4.avif",
     videoId: "MpB9x2h8rt0",
     name:"Jai Shri Ram"
   },
   {
     id: 5,
-    img: "https://img.youtube.com/vi/NJcG_QaE6XQ/hqdefault.jpg",
+    img: "/images/Slider2/shorts5.avif",
     videoId: "NJcG_QaE6XQ",
     name:"#religion #motivation"
   },
   {
     id: 6,
-    img: "https://img.youtube.com/vi/wZsM302HyJk/hqdefault.jpg",
+    img: "/images/Slider2/shorts6.avif",
     videoId: "wZsM302HyJk",
     name:"Jai Shri Ram"
   },
   {
     id: 7,
-    img: "https://img.youtube.com/vi/QA3AU7mypwQ/hqdefault.jpg",
+    img: "/images/Slider2/shorts7.avif",
     videoId: "QA3AU7mypwQ",
     name:"Meri Maiyya #religion"
   },
   {
     id: 8,
-    img: "https://img.youtube.com/vi/Dr6CgU90JkU/hqdefault.jpg",
+    img: "/images/Slider2/shorts8.avif",
     videoId: "Dr6CgU90JkU",
     name:"Shree Ram Stuti "
   },
   {
     id: 9,
-    img: "https://img.youtube.com/vi/SZ_Tn8kJeao/hqdefault.jpg",
+    img: "/images/Slider2/shorts9.avif",
     videoId: "SZ_Tn8kJeao",
     name:"Jai Shri Ram"
   },

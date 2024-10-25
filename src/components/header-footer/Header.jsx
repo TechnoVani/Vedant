@@ -85,7 +85,7 @@ const Header = () => {
         >
           <Link to='/' className="shrink-0">
           <img
-            src="/images/god gallery/vedanttttt.jpg"
+            src="images/god gallery/vedanttttt.jpg"
             className="h-10 rounded-full"
             alt="Flowbite Logo"
           />

@@ -5,38 +5,38 @@ const videos = [
     {
         id: 1,
 
-        thumbnail: "https://i.ytimg.com/vi/43Ga_uTQnxg/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBPBAB6fcCW_A4eq2OgxisNZ1qzUw",
+        thumbnail: "/images/Slider1/video1.avif",
         url: "https://www.youtube.com/embed/43Ga_uTQnxg?si=uFU-zQe_gBknyv_y",
     },
     {
         id: 2,
 
-        thumbnail: "https://i.ytimg.com/vi/RdVfnDMCINw/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAMZSxGFYXDMJ-Vvt-LTTjbmeK12A",
+        thumbnail: "/images/Slider1/video2.avif",
         url: "https://www.youtube.com/embed/RdVfnDMCINw?si=bi00e1zQCrPiCYny",
     },
     {
         id: 3,
-        thumbnail: "https://i.ytimg.com/vi/TpOsJ7cHd9w/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLA1PUcZfRd7KYM0gQaP1J20TBTbbg",
+        thumbnail: "/images/Slider1/video3.avif",
         url: "https://www.youtube.com/embed/TpOsJ7cHd9w?si=V5uc_DRQLf63B8Mb",
     },
     {
         id: 4,
-        thumbnail: "https://img.youtube.com/vi/5gQ0qZo1-Nc/hqdefault.jpg",
+        thumbnail: "/images/Slider1/video4.avif",
         url: "https://www.youtube.com/embed/5gQ0qZo1-Nc?si=kqS60B-_sBenXSjc",
     },
     {
         id: 5,
-        thumbnail: "https://i.ytimg.com/vi/J2RX8rGwZtg/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDoHfHnTq-Z6OLXgh9A9b9WRSvizQ",
+        thumbnail: "/images/Slider1/video5.avif",
         url: "https://www.youtube.com/embed/J2RX8rGwZtg?si=PuKkI7ejN__d0us0",
     },
     {
         id: 6,
-        thumbnail: "https://i.ytimg.com/vi/eYgYvQFs6G8/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCgHMluRHQ005hWO2OusMk7Mt8kZQ",
+        thumbnail: "/images/Slider1/video6.avif",
         url: "https://www.youtube.com/embed/eYgYvQFs6G8?si=enLrtOCmUqXWiwcg",
     },
     {
         id: 7,
-        thumbnail: "https://i.ytimg.com/vi/zFr6E5H5sRg/hqdefault.jpg?sqp=-oaymwE2CNACELwBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhyIFIoPTAP&rs=AOn4CLBUw0ooVH7VjBNLaeWBglt2r_0d7g",
+        thumbnail: "/images/Slider1/video7.avif",
         url: "https://www.youtube.com/embed/zFr6E5H5sRg?si=R021V1YLU7zkcNCc",
     },
 ];
@@ -61,9 +61,9 @@ const VideoSlider = () => {
                         height="100%"
                         src={selectedVideo}
                         title="YouTube video player"
-                        frameBorder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowFullScreen
+                        loading="lazy"
                     ></iframe>
                 </div>
             </div>
