@@ -109,27 +109,27 @@ const Footer = () => {
           </span>
           <div className="flex sm:justify-center text-3xl">
             {/* Facebook */}
-            <Link to="#" className="text-gray-300 hover:text-blue-800 dark:hover:text-white ml-5">
+            <Link to="https://www.facebook.com/share/MjLMpHqNsy3qWijs/" target='_blank' className="text-gray-300 hover:text-blue-800 dark:hover:text-white ml-5">
             <FaFacebook />
               <span className="sr-only">Facebook page</span>
             </Link>
 
-            {/* Discord */}
-            <Link to="#" className="text-gray-300 hover:text-red-800 dark:hover:text-white ml-5">
+            {/* Instagram */}
+            <Link to="#" className="text-gray-300 hover:text-red-300 dark:hover:text-white ml-5">
             <FaInstagram />
               <span className="sr-only">Instagram</span>
             </Link>
 
             {/* Twitter */}
-            <Link to="#" className="text-gray-300 hover:text-blue-800 dark:hover:text-white ml-5">
+            {/* <Link to="#" className="text-gray-300 hover:text-blue-800 dark:hover:text-white ml-5">
               <FaTwitter />
               <span className="sr-only">Twitter page</span>
-            </Link>
+            </Link> */}
 
-            {/* Dribbble */}
-            <Link to="#" className="text-gray-300 hover:text-red-800 dark:hover:text-white ml-5">
+            {/* Youtube */}
+            <Link to="https://www.youtube.com/@vedantdevotions" target='_blank' className="text-gray-300 hover:text-red-800 dark:hover:text-white ml-5">
               <FaYoutube />
-              <span className="sr-only">Dribbble account</span>
+              <span className="sr-only">YouTube</span>
             </Link>
           </div>
         </div>
