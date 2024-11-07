@@ -10,8 +10,8 @@ const AboutUs = () => {
         <meta name="keywords" content="Vedant Devotion, spirituality, bhajans, music, Indian mythology" />
     
       </Helmet>
-      <section className=" overflow-hidden h-full py-10 ">
-        <div className="px-4 flex justify-center items-center h-full mx-auto sm:px-6 lg:px-8 max-w-7xl">
+      <section className=" overflow-hidden h-full py-10 px-2">
+        <div className="headVideo py-5 shadow-2xl rounded-lg overflow-hidden px-4 flex justify-center items-center h-full mx-auto sm:px-6 lg:px-8 max-w-7xl">
           <div className="grid items-center gap-2 grid-cols-1 md:grid-cols-2">
             <div className=" w-full h-full flex justify-center items-center ">
               <img
@@ -23,7 +23,7 @@ const AboutUs = () => {
 
               {/* <img className="relative w-full xl:max-w-lg  xl:mx-auto 2xl:origin-bottom " src="https://cdn.rareblocks.xyz/collection/celebration/images/team/1/business-woman.png" alt="" /> */}
             </div>
-            <div className=" w-full h-full ">
+            <div className=" w-full h-full">
               <h1 className="text-4xl font-semibold pb-1 border-b-4 border-gray-900 max-w-max mb-3">About Us</h1>
               <h2 className="text-xl leading-tight text-gray-900 dark:text-black sm:text-4xl lg:text-3xl">
                 Welcome to Vedant Devotion: Where Spirituality Sings
@@ -40,13 +40,10 @@ const AboutUs = () => {
 
           </div>
         </div>
-        <section className="container mx-auto px-4 py-12">
-          <div className="mb-8 ">
 
-          </div>
-
-
-          <div className="bg-white shadow-lg rounded-lg p-6 mb-8">
+        <section className="container mx-auto py-12">
+ 
+          <div className=" shadow-lg p-6 rounded-lg mb-8 bg-gray-50 border hover:border-gray-700 overflow-hidden hover:shadow-2xl hover:scale-[1.01] duration-300">
             <h2 className="text-2xl font-semibold mb-4 text-gray-900">Melodies of the Divine</h2>
             <p className="text-md leading-relaxed text-justify">
               Our platform resonates with the soulful renditions of bhajans and dharmik geet. We believe that music transcends language and beliefs,
@@ -56,7 +53,7 @@ const AboutUs = () => {
           </div>
 
 
-          <div className="bg-white shadow-lg rounded-lg p-6 mb-8">
+          <div className=" shadow-lg rounded-lg p-6 mb-8 bg-gray-50 border hover:border-gray-700 overflow-hidden hover:shadow-2xl hover:scale-[1.01] duration-300">
             <h2 className="text-2xl font-semibold mb-4 text-gray-900">Amplifying New Voices</h2>
             <p className="text-md leading-relaxed text-justify">
               Vedant Devotion is not just a repository of spiritual music; it's a launchpad for talented singers and musicians.
@@ -66,7 +63,7 @@ const AboutUs = () => {
           </div>
 
 
-          <div className="bg-white shadow-lg rounded-lg p-6 mb-8">
+          <div className=" shadow-lg rounded-lg p-6 mb-8 bg-gray-50 border hover:border-gray-700 overflow-hidden hover:shadow-2xl hover:scale-[1.01] duration-300">
             <h2 className="text-2xl font-semibold mb-4 text-gray-900">Experience & Expertise</h2>
             <p className="text-md leading-relaxed text-justify">
               Our team boasts extensive experience in producing and directing spiritual content for diverse national and international platforms.
@@ -76,7 +73,7 @@ const AboutUs = () => {
           </div>
 
 
-          <div className="bg-white shadow-lg rounded-lg p-6">
+          <div className=" shadow-lg rounded-lg p-6 bg-gray-50 border hover:border-gray-700 overflow-hidden hover:shadow-2xl hover:scale-[1.01] duration-300">
             <h2 className="text-2xl font-semibold mb-4 text-gray-900">Join us on this soulful journey</h2>
             <p className="text-md leading-relaxed mb-6 text-justify">
               Whether you're a seasoned devotee, a curious explorer, or a budding musician, Vedant Devotion welcomes you with open arms.
@@ -88,6 +85,7 @@ const AboutUs = () => {
             </p>
           </div>
         </section>
+
       </section>
       <div className="bg-black">
         <section
@@ -105,7 +103,7 @@ const AboutUs = () => {
           </div>
           <div className="relative mx-auto max-w-7xl z-10 grid grid-cols-1 gap-10 pt-14 sm:grid-cols-2 lg:grid-cols-3">
             {/* Card 1 */}
-            <div className="rounded-md border border-neutral-800 bg-neutral-900/50 p-8 text-center shadow">
+            <div className="rounded-md border border-neutral-800 bg-neutral-900/50 p-8 text-center hover:shadow-2xl hover:scale-105 duration-300 OurSection">
 
               <h3 className="mt-0 mb-10 pb-2 text-xl border-b-2 font-semibold text-gray-200">
                 Our Mission
@@ -121,13 +119,13 @@ const AboutUs = () => {
             </div>
 
             {/* Card 2 */}
-            <div className="rounded-md border border-neutral-800 bg-neutral-900/50 p-8 text-center shadow">
+            <div className="rounded-md border border-neutral-800 bg-neutral-900/50 p-8 text-center shadow hover:shadow-2xl hover:scale-105 duration-300 OurSection">
 
               <h3 className="mt-0 mb-10 pb-2 text-xl border-b-2 font-semibold text-gray-200">
                 Our Vision
               </h3>
               <p className="my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-400 text-justify">
-                Our platform is more than just a collection of images; it’s a
+                Our platform is more than just a collection of images; it,s a
                 journey. Each post on our YouTube channel is designed to inspire
                 faith, offering a peaceful pause in your busy life. Whether
                 you're seeking a moment of serenity, a spark of inspiration, or
@@ -137,7 +135,7 @@ const AboutUs = () => {
             </div>
 
             {/* Card 3 */}
-            <div className="rounded-md border border-neutral-800 bg-neutral-900/50 p-8 text-center shadow">
+            <div className="rounded-md border border-neutral-800 bg-neutral-900/50 p-8 text-center shadow hover:shadow-2xl hover:scale-105 duration-300 OurSection">
 
               <h3 className="mt-0 mb-10 pb-2 text-xl border-b-2 font-semibold text-gray-200">
                 Our Goal
@@ -147,28 +145,12 @@ const AboutUs = () => {
                 passionate about connecting with individuals who share a love
                 for spirituality and devotion. As we continue to grow, we invite
                 you to join us on this sacred journey. Subscribe to our YouTube
-                channel for regular updates, and let’s explore the world of
+                channel for regular updates, and let's explore the world of
                 devotion together, one image at a time.
               </p>
             </div>
 
-            {/* Decorative elements */}
-            <div
-              className="absolute bottom-0 left-0 z-0 h-1/3 w-full border-b"
-              style={{
-                backgroundImage:
-                  "linear-gradient(to right top, rgba(79, 70, 229, 0.2) 0%, transparent 50%, transparent 100%)",
-                borderColor: "rgba(92, 79, 240, 0.2)",
-              }}
-            ></div>
-            <div
-              className="absolute bottom-0 right-0 z-0 h-1/3 w-full"
-              style={{
-                backgroundImage:
-                  "linear-gradient(to left top, rgba(220, 38, 38, 0.2) 0%, transparent 50%, transparent 100%)",
-                borderColor: "rgba(92, 79, 240, 0.2)",
-              }}
-            ></div>
+            
           </div>
 
 

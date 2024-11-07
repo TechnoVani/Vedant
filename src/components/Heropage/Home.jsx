@@ -30,8 +30,8 @@ const Home = () => {
 
         {/* </div> */}
         <section className="relative w-full py-2 ">
-          <div className="text-center mt-5 py-2 bg-gray-200">
-            <h3 className='mx-auto font-manrope font-semibold bg-gray-200 text-gray-900 text-2xl md:leading-normal'>New <span className=" text-red-600">Releases</span></h3>
+          <div className="text-center mt-5 py-2 headVideo">
+            <h3 className='mx-auto font-manrope font-semibold   text-gray-900 text-2xl md:leading-normal'>New <span className=" text-red-600">Releases</span></h3>
           </div>
           <SwiperDiv contentType="videos" />
 
@@ -60,13 +60,13 @@ const Home = () => {
         </section>
         {/* <SwiperSecond /> */}
         <VideoSlider/>
-        <section className="py-14 lg:py-10 relative shadow-zinc-600 z-0">
-          <div className="mx-auto relative">
-            <h3 className="text-center mx-auto font-manrope font-bold text-2xl py-2 bg-gray-200 text-gray-900 mb-5  md:leading-normal">
+        <section className=" py-14 my-10 lg:py-10 relative shadow-zinc-600 z-0">
+          <div className="mx-auto relative ">
+            <h3 className="headVideo text-center mx-auto font-manrope font-bold text-2xl py-2 bg-gray-200 text-gray-900 mb-5  md:leading-normal">
               Discover Our Path to <span className="text-red-600">Devotion </span>
             </h3>
 
-            <p className=" text-lg font-normal leading-7 text-gray-700 mb-9 text-justify px-3">
+            <p className=" text-lg font-light leading-7 text-gray-800 mb-9 text-justify px-3">
               At the heart of our mission is a dedication to fostering spiritual
               growth and connection through the power of devotion. Our website
               offers a vast collection of devotional videos, prayers, and
@@ -100,8 +100,8 @@ const Home = () => {
         </section> */}
         <section className="max-w-full mb-10 py-6 ">
           
-          <div className='flex items-center justify-between py-2 px-2 mt-5 bg-gray-200'>
-                <h1 className='font-manrope font-semibold text-gray-900 text-2xl md:leading-normal'>Trending <span className='text-red-600'>Shorts</span></h1>
+          <div className='headVideo flex items-center justify-between py-2 px-2 mt-5 bg-gray-200'>
+                <h1 className=' font-manrope font-semibold text-gray-900 text-2xl md:leading-normal'>Trending <span className='text-red-600'>Shorts</span></h1>
                 <Link to="/videos" className='border px-3 py-1 rounded-full border-black hover:text-red-600 hover:border-red-600 hover:bg-white hover:shadow-lg duration-150'>See More →</Link>
             </div>
           <SwiperDiv contentType="shorts" />

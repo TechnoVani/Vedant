@@ -8,7 +8,7 @@ import {
 } from "@material-tailwind/react";
 import VideoModal from "./Heropage/HomeComponents/VideoModal";
 import { Helmet } from "react-helmet";
- // Ensure the path is correct for your project
+// Ensure the path is correct for your project
 
 // Example card data for HTML and React sections
 const cardData = {
@@ -102,12 +102,12 @@ const AllVideos = () => {
     {
       label: "VIDEOS",
       value: "videos",
-     
+
     },
     {
       label: "SHORTS",
       value: "shorts",
-     
+
     },
   ];
 
@@ -119,15 +119,15 @@ const AllVideos = () => {
   };
 
   return (
-    <div>
+    <div className="flex items-center justify-center">
       <Helmet>
         <title>Vedant Devotions | All-Videos</title>
         <meta name="description" content="Explore a curated collection of spiritual videos and shorts. Discover insights and teachings that inspire." />
-  <meta name="keywords" content="spiritual videos, vedant devotions, motivational shorts, teachings" />
-  
+        <meta name="keywords" content="spiritual videos, vedant devotions, motivational shorts, teachings" />
+
       </Helmet>
-      <Tabs id="custom-animation" className="pt-5" value={activeTab}>
-        <div className="flex justify-center bg-gray-200 py-2">
+      <Tabs id="custom-animation" className="pt-5 container" value={activeTab}>
+        <div className="flex justify-center bg-gray-200 py-2 headVideo ">
           <TabsHeader
             className="rounded-none w-60 border-b border-blue-gray-50 bg-transparent p-0"
             indicatorProps={{
@@ -141,7 +141,7 @@ const AllVideos = () => {
                 value={value}
                 onClick={() => setActiveTab(value)}
                 className={activeTab === value ? "text-gray-900" : ""}
-                
+
               >
                 {label}
               </Tab>
@@ -155,13 +155,13 @@ const AllVideos = () => {
         }}>
           {data.map(({ value, desc }) => (
             <TabPanel key={value} value={value}>
-            
+
               {/* Render the card data for the active tab */}
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
                 {cardData[value].map((card, index) => (
                   <div
                     key={card.id}
-                    className="p-1 bg-white shadow-lg rounded-lg cursor-pointer"
+                    className="p-1 hover:scale-105 duration-300 shadow-lg rounded-lg cursor-pointer"
                     onClick={() => openModal(card.videoId)} // Open modal on card click
                   >
                     <img

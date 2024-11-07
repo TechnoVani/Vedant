@@ -8,7 +8,8 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className=" bg-gray-900">
+    <footer className="footer relative z-20 bg-gray-900 ">
+      <div className="w-full h-full absolute top-0 left-0 bg-[#00000088] backdrop-blur-sm -z-10"></div>
       <div className="w-full max-w-screen py-6 lg:py-8">
         <div className="grid grid-cols-1 gap-2 items-center lg:grid-cols-2">
           {/* Logo and Description */}
@@ -41,7 +42,7 @@ const Footer = () => {
               <h2 className="mb-6 text-sm font-semibold text-gray-50 uppercase dark:text-white">
                 Links
               </h2>
-              <ul className="text-gray-500  dark:text-gray-400 font-medium">
+              <ul className="text-gray-200  dark:text-gray-400 font-medium">
                 <li className="mb-4">
 
                   <Link to="/" className="hover:underline">
@@ -72,7 +73,7 @@ const Footer = () => {
               <h2 className="mb-6 text-sm font-semibold text-gray-50 uppercase dark:text-white">
                 Legal
               </h2>
-              <ul className="text-gray-500  dark:text-gray-400 font-medium">
+              <ul className="text-gray-200  dark:text-gray-400 font-medium">
                 <li className="mb-4">
 
                   <Link to="#" className="hover:underline">
@@ -107,16 +108,16 @@ const Footer = () => {
             </Link>
             . All Rights Reserved.
           </span>
-          <div className="flex sm:justify-center text-3xl">
+          <div className="flex sm:justify-center lg:text-3xl md:text-3xl">
             {/* Facebook */}
             <Link to="https://www.facebook.com/share/MjLMpHqNsy3qWijs/" target='_blank' className="text-gray-300 hover:text-blue-800 dark:hover:text-white ml-5">
-            <FaFacebook />
+              <FaFacebook />
               <span className="sr-only">Facebook page</span>
             </Link>
 
             {/* Instagram */}
             <Link to="https://www.facebook.com/share/MjLMpHqNsy3qWijs/" target='_blank' className="text-gray-300 hover:text-red-300 dark:hover:text-white ml-5">
-            <FaInstagram />
+              <FaInstagram />
               <span className="sr-only">Instagram</span>
             </Link>
 
