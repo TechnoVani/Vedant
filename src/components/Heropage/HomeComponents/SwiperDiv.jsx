@@ -242,7 +242,7 @@ export function SwiperDiv({ contentType }) {
             <SwiperSlide key={card.id} className="select-none p-1 w-full">
               <div
               onClick={() => openModal(card.videoId)}
-              className="relative h-[170px] w-full overflow-hidden cursor-pointer bg-blue-gray-500  rounded-md group">
+              className="relative h-[170px] w-full overflow-hidden cursor-pointer bg-blue-gray-500 hover:scale-105 duration-300 rounded-md group">
                 {/* Image */}
                 <img
                   src={card.img}

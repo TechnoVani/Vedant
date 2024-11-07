@@ -91,7 +91,7 @@ const Header = () => {
             />
           </Link>
 
-          VEDANT{" "}
+          {/* VEDANT{" "}
           <span className="text-[#560A2C]">
             <Typewriter
               words={["DEVOTIONS", "DEVOTIONS"]}
@@ -102,7 +102,7 @@ const Header = () => {
               deleteSpeed={50}
               delaySpeed={1000}
             />
-          </span>
+          </span> */}
         </Typography>
         <div className="hidden lg:block">{navList}</div>
         {/* 

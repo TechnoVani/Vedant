@@ -45,12 +45,12 @@ const VideoSlider = () => {
     const [selectedVideo, setSelectedVideo] = useState(videos[0].url);
 
     return (
-        <>
-         <div className='flex items-center justify-between py-2 px-2 mt-5 bg-gray-200'>
-                <h1 className='font-manrope font-semibold bg-gray-200 text-gray-900 text-2xl md:leading-normal'>Latest <span className='text-red-600'>Videos</span></h1>
+        <div className="videoModel">
+         <div className='headVideo flex items-center justify-between py-2 px-2 mt-5 bg-gray-200'>
+                <h1 className='font-manrope font-semibold text-gray-900 text-2xl md:leading-normal'>Latest <span className='text-red-600'>Videos</span></h1>
                 <Link to="/videos" className='border px-3 py-1 rounded-full border-black hover:text-red-600 hover:border-red-600 hover:bg-white hover:shadow-lg duration-150'>See More →</Link>
             </div>
-        <div className="flex md:flex-row flex-col md:h-[40rem] bg-gray-100 border shadow-xl">
+        <div className="flex md:flex-row flex-col md:h-[40rem] bg-gray-900 border shadow-xl">
 
            
             {/* Video Player Section */}
@@ -85,7 +85,7 @@ const VideoSlider = () => {
             </div>
 
         </div>
-        </>
+        </div>
         
     );
 };

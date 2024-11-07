@@ -2,8 +2,101 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 body {
-    background-color: #FEFCF0;
+  background-color: #FEFCF0;
+}
+.videoModel {
+  background-image: url("/images/god gallery/bg.jpeg");
+  background-position: right bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.footer {
+  background-image: url("/images/god gallery/footer.jpeg");
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 599px) {
+  .footer {
+    background-position: center;
   }
+}
+
+.homebox {
+  background-image: url("/images/god gallery/bg2.jpeg");
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.headVideo {
+  background-image: url("/images/god gallery/bg.jpeg");
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 2;
+}
+.headVideo::after{
+  content: "";
+  position: absolute;
+  background-color: #ffffff32;
+  top: 0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(10px);
+  z-index: -1;
+}
+/* .headNav{
+  
+background-image: url('/images/god gallery/bg.jpeg');
+background-position: top;
+background-size: cover;
+background-repeat: no-repeat;
+
+
+} */
+.OurSection{
+  position: relative;
+  overflow: hidden;
+}
+.OurSection::after{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left:0;
+  width: 0%;
+  height: 3px; 
+  background-color: rgb(255, 219, 147);
+  backdrop-filter: blur(10px);
+  z-index: 5;
+  transition: linear 0.30s all;
+}
+.OurSection:hover::after{
+  width: 100%;
+}
+
+
+.Discover {
+  background-image: url("/images/god gallery/bg5.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 2;
+}
+.Discover::after{
+  content: "";
+  position: absolute;
+  background-color: #0000006c;
+  top: 0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(10px);
+  z-index: -1;
+}
