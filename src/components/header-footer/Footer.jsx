@@ -16,7 +16,7 @@ const Footer = () => {
             <Link to='/' className="flex items-center justify-center gap-2 flex-col ">
 
               <img
-                src="images/god gallery/vedanttttt.jpg"
+                src="images/god gallery/vedanttttt.avif"
                 className=" w-[8rem] mr-3 rounded-full"
                 alt="Logo"
               />
@@ -115,7 +115,7 @@ const Footer = () => {
             </Link>
 
             {/* Instagram */}
-            <Link to="#" className="text-gray-300 hover:text-red-300 dark:hover:text-white ml-5">
+            <Link to="https://www.facebook.com/share/MjLMpHqNsy3qWijs/" target='_blank' className="text-gray-300 hover:text-red-300 dark:hover:text-white ml-5">
             <FaInstagram />
               <span className="sr-only">Instagram</span>
             </Link>
