@@ -81,12 +81,12 @@ const Header = () => {
         <Typography
           as="a"
           href="#"
-          className="mr-4 md:text-2xl lg:text-xl inline-flex items-center text-[#560A2C] gap-2  cursor-pointer lg:w-[17vw] py-1.5 font-medium"
+          className="mr-4 md:text-2xl lg:text-xl inline-flex items-center text-[#560A2C] gap-2  cursor-pointer lg:w-[17vw] font-medium"
         >
           <Link to='/' className="shrink-0">
             <img
-              src="images/god gallery/vedanttttt.avif"
-              className="h-10 rounded-full"
+              src="images/god gallery/VD_Logo.avif"
+              className="lg:h-16 h-12 md:h-16 rounded-full"
               alt="Flowbite Logo"
             />
           </Link>
